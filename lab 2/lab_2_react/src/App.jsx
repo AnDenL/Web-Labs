@@ -1,8 +1,8 @@
 import { useState } from 'react'
-import Header from './components/Header';
 import './App.css'
-import Experience from './components/Experience';
+import Header from './components/Header';
 import Education from './components/Education';
+import Experience from './components/Experience';
 import Footer from './components/Footer';
 
 function App() {
