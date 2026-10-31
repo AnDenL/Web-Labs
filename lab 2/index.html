@@ -22,9 +22,12 @@
 <body>
     <div class="container">
     <header class="card" style="border-top: 4px solid #38bdf8;">
-        <div class="header-main">
-            <h1 class="title">Denys Lebediuk</h1>
-            <p class="subtitle">Game developer / System programmer</p>
+        <div class="header-main" style="display: flex; justify-content: space-between; align-items: center;">
+            <div>
+                <h1 class="title">Denys Lebediuk</h1>
+                <p class="subtitle">Game developer / System programmer</p>
+            </div>
+            <button id="theme-toggle-btn" class="theme-btn">🌙 / ☀️ Theme</button>
         </div>
 
         <section id="contacts" class="contacts-section">
@@ -94,6 +97,29 @@
             </ul>
         </section>
     </footer>
+        <div class="container">
+            <h2>Comments</h2>
+            <div class="card" id="comments-container">Loading comments...</div>
+        </div>
     </div>
+
+    <div id="sys-info"></div>
+
+
+    <div id="modal-overlay" class="modal-overlay" style="display: none;">
+        <div class="modal-content">
+            <button id="close-modal-btn" class="close-btn">&times;</button>
+            <h2>Contact Us</h2>
+            <form action="https://formspree.io/f/mljjpdlr" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required class="form-input">
+                <input type="email" name="email" placeholder="Your Email" required class="form-input">
+                <input type="tel" name="phone" placeholder="Your Phone Number" required class="form-input">
+                <textarea name="message" placeholder="Your Message" required class="form-input" rows="4"></textarea>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
 </body>
 </html>
